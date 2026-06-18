@@ -17,8 +17,6 @@ jobs:
         run: npm install
       - name: Run scraper
         run: node index.js
-      - name: Extract 720p variants
-        run: python3 extract_variants.py
       - name: Commit files
         run: |
           git config --global user.name "github-actions"
